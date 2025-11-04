@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quote Generator</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Random Quote Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Random Quote Generator</h1>
-    <div class="quote-box">
-      <p id="quote-text">Loading your quote...</p>
-      <h3 id="quote-author"></h3>
+  <div class="card">
+    <h1>✨ Random Quote Generator ✨</h1>
+    <blockquote id="quote-text">Loading quote...</blockquote>
+    <p id="quote-author"></p>
+    <div class="btns">
+      <button id="new-quote-btn">New Quote</button>
+      <button id="copy-btn">Copy</button>
+      <button id="share-btn">Share 💬</button>
     </div>
-    <button id="new-quote-btn">Get New Quote</button>
   </div>
-
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
